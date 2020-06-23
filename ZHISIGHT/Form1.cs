@@ -164,6 +164,8 @@ namespace ZHISIGHT
         private ToolStripButton toolStripButton = new ToolStripButton();
         private ToolStrip toolStrip = new ToolStrip();
         private Timer timer0 = new Timer();
+        MyTextBox textBox1;
+        ProgressBar progressBar;
         #endregion
 
         #region 封装字段
@@ -284,8 +286,6 @@ namespace ZHISIGHT
         #region 成员方法
         private void Timer0_Tick(object sender, EventArgs e)
         {
-            MyTextBox textBox1;
-            ProgressBar progressBar;
             double value;
             //获取TransGroup中的所有的控件并发送
             foreach (var textBox in TransGroup.Controls)
@@ -354,9 +354,9 @@ namespace ZHISIGHT
             }
             else
             {
-                //关闭定时器                
-                intfCANSignal.StopTimer();
+                //关闭定时器
                 timer0.Stop();
+                intfCANSignal.StopTimer();
                 IntfCANDriver.Reset();
                 toolStripButton.Text = "连接";
                 MessageBox.Show("通道关闭成功！", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -418,7 +418,7 @@ namespace ZHISIGHT
                             Location = new System.Drawing.Point(xPosition, yPosition + 3),   //添加signal控件
                             Name = "label" + dataRows[j]["SignalName"].ToString(),
                             Size = new System.Drawing.Size(62, 18),
-                            Text = dataRows[j]["SignalName"].ToString()
+                            Text = System.Text.Encoding.UTF8.GetString(System.Text.Encoding.UTF8.GetBytes(dataRows[j]["Description"].ToString()))
                         };
                         groupBox.Controls.Add(labels);
 
@@ -449,8 +449,8 @@ namespace ZHISIGHT
                                 Location = new System.Drawing.Point(xPosition + ((labels.Size.Width + 10) > 130 ? (labels.Size.Width + 10) : 130), yPosition),
                                 Name = list[i] + " " + dataRows[j]["SignalName"].ToString(),
                                 Size = new System.Drawing.Size(50, 28),
-                                Text = "0",
-                                StrValue = "0",
+                                Text = IntfCANSignal.GetSignalByNameToApp(Convert.ToUInt32(list[i]), System.Text.Encoding.UTF8.GetBytes(dataRows[j]["SignalName"].ToString())).ToString(),
+                                StrValue = IntfCANSignal.GetSignalByNameToApp(Convert.ToUInt32(list[i]), System.Text.Encoding.UTF8.GetBytes(dataRows[j]["SignalName"].ToString())).ToString(),
                             };
                             if (groupBox.Text == "Transmitted")
                             {

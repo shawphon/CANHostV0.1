@@ -28,6 +28,7 @@ namespace CANSignalLayer
         DBC.OnSend sender;
         private Dictionary<uint, uint> dicMessageIDandPeriod = new Dictionary<uint, uint>();//消息ID和周期值字典
         private Dictionary<string, uint> dicMessagespaceandSignalName = new Dictionary<string, uint>();//消息ID和周期值字典
+        private Dictionary<string, string> dicSignalNameAndBindingName = new Dictionary<string, string>();//消息ID和周期值字典
         //System.Timers.Timer recTimer;
         //System.Timers.Timer recTimer;
         List<MillisecondTimer> listSendTimer = new List<MillisecondTimer>();
@@ -36,6 +37,7 @@ namespace CANSignalLayer
         Ctx ctx = new Ctx();
         IntPtr ptCtx;
         Thread recThread;
+        private bool recThreadFlag = false;
         #endregion
 
         #region 字段封装
@@ -87,7 +89,12 @@ namespace CANSignalLayer
                 foreach (DataRow dr in dataRows)
                 {
                     DicMessageIDandPeriod[Convert.ToUInt32(dr["MessageID"])] = Convert.ToUInt32(dr["Period"]);
-                    dicMessagespaceandSignalName[Convert.ToUInt32(dr["MessageID"]).ToString() + " " + dr["SignalName"].ToString()] = Convert.ToUInt32(dr["Period"]);
+                    //System.Diagnostics.Debug.WriteLine(dr["SignalName"].ToString().Trim().ToLower());
+                    if (dr["SignalName"].ToString().Trim().ToLower().Contains("life"))
+                    {
+                        dicMessagespaceandSignalName[Convert.ToUInt32(dr["MessageID"]).ToString() + " " + dr["SignalName"].ToString()] = Convert.ToUInt32(dr["Period"]);
+                    }
+                    //dicSignalNameAndBindingName[Convert.ToUInt32(dr["MessageID"]).ToString() + " " + dr["SignalName"].ToString()]
                 }
 
                 for (int i = 0; i < recFrame.Length; i++)       //初始化接收的帧的TimeFlag，使得时间戳信息有效。
@@ -300,6 +307,7 @@ namespace CANSignalLayer
 
         public void StartTimer()
         {
+            recThreadFlag = true;
             recThread.Start();
             //RecTimer.Start();
             for (int i = 0; i < listSendTimer.Count; i++)
@@ -314,6 +322,7 @@ namespace CANSignalLayer
 
         public void StopTimer()
         {
+            recThreadFlag = false;
             recThread.Abort();
             //RecTimer.Stop();
             //RecTimer.Enabled = false;
