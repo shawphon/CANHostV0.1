@@ -99,3 +99,35 @@ Z:\JOB\CAN HOST COMPUTER\CANHOSTV1.0\Signal\obj\Debug\netstandard2.0\Signal.Asse
 Z:\JOB\CAN HOST COMPUTER\CANHOSTV1.0\Signal\obj\Debug\netstandard2.0\Signal.csproj.CopyComplete
 Z:\JOB\CAN HOST COMPUTER\CANHOSTV1.0\Signal\obj\Debug\netstandard2.0\Signal.dll
 Z:\JOB\CAN HOST COMPUTER\CANHOSTV1.0\Signal\obj\Debug\netstandard2.0\Signal.pdb
+E:\software development\CANHostV0.1\Signal\bin\Debug\netstandard2.0\ControlCAN.dll
+E:\software development\CANHostV0.1\Signal\bin\Debug\netstandard2.0\kerneldlls\CAN232.dll
+E:\software development\CANHostV0.1\Signal\bin\Debug\netstandard2.0\kerneldlls\CANDTU_NET.dll
+E:\software development\CANHostV0.1\Signal\bin\Debug\netstandard2.0\kerneldlls\CANETE.dll
+E:\software development\CANHostV0.1\Signal\bin\Debug\netstandard2.0\kerneldlls\CANET_TCP.dll
+E:\software development\CANHostV0.1\Signal\bin\Debug\netstandard2.0\kerneldlls\CANWIFI_TCP.dll
+E:\software development\CANHostV0.1\Signal\bin\Debug\netstandard2.0\kerneldlls\CANWIFI_UDP.dll
+E:\software development\CANHostV0.1\Signal\bin\Debug\netstandard2.0\kerneldlls\gisadll.dll
+E:\software development\CANHostV0.1\Signal\bin\Debug\netstandard2.0\kerneldlls\gpcidll.dll
+E:\software development\CANHostV0.1\Signal\bin\Debug\netstandard2.0\kerneldlls\isa5420.dll
+E:\software development\CANHostV0.1\Signal\bin\Debug\netstandard2.0\kerneldlls\kerneldll.ini
+E:\software development\CANHostV0.1\Signal\bin\Debug\netstandard2.0\kerneldlls\PC104C2.dll
+E:\software development\CANHostV0.1\Signal\bin\Debug\netstandard2.0\kerneldlls\PC104CAN.dll
+E:\software development\CANHostV0.1\Signal\bin\Debug\netstandard2.0\kerneldlls\PCI5121.dll
+E:\software development\CANHostV0.1\Signal\bin\Debug\netstandard2.0\kerneldlls\usbcan.dll
+E:\software development\CANHostV0.1\Signal\bin\Debug\netstandard2.0\LibDBCManager.dll
+E:\software development\CANHostV0.1\Signal\bin\Debug\netstandard2.0\LibDBCManager.lib
+E:\software development\CANHostV0.1\Signal\bin\Debug\netstandard2.0\winmm.dll
+E:\software development\CANHostV0.1\Signal\bin\Debug\netstandard2.0\Signal.deps.json
+E:\software development\CANHostV0.1\Signal\bin\Debug\netstandard2.0\Signal.dll
+E:\software development\CANHostV0.1\Signal\bin\Debug\netstandard2.0\Signal.pdb
+E:\software development\CANHostV0.1\Signal\bin\Debug\netstandard2.0\CSVFileOpe.dll
+E:\software development\CANHostV0.1\Signal\bin\Debug\netstandard2.0\Driver.dll
+E:\software development\CANHostV0.1\Signal\bin\Debug\netstandard2.0\CSVFileOpe.pdb
+E:\software development\CANHostV0.1\Signal\bin\Debug\netstandard2.0\Driver.pdb
+E:\software development\CANHostV0.1\Signal\obj\Debug\netstandard2.0\Signal.csprojAssemblyReference.cache
+E:\software development\CANHostV0.1\Signal\obj\Debug\netstandard2.0\Signal.AssemblyInfoInputs.cache
+E:\software development\CANHostV0.1\Signal\obj\Debug\netstandard2.0\Signal.AssemblyInfo.cs
+E:\software development\CANHostV0.1\Signal\obj\Debug\netstandard2.0\Signal.csproj.CoreCompileInputs.cache
+E:\software development\CANHostV0.1\Signal\obj\Debug\netstandard2.0\Signal.csproj.CopyComplete
+E:\software development\CANHostV0.1\Signal\obj\Debug\netstandard2.0\Signal.dll
+E:\software development\CANHostV0.1\Signal\obj\Debug\netstandard2.0\Signal.pdb

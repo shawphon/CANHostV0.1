@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "7mN89OCwl2alPDZNQxnYkBHzPEgHiInk5q6sJQH4cHOpyg/XWVBMOZNf5m9XY9dasmXHiEZqQImmR6Ha8nnAZw==",
+  "success": true,
+  "projectFilePath": "E:\\software development\\CANHostV0.1\\Driver\\Driver.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\shawphon\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\shawphon\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

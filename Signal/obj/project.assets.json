@@ -211,23 +211,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ASUS\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\shawphon\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Z:\\JOB\\CAN HOST COMPUTER\\CANHOSTV1.0\\Signal\\Signal.csproj",
+      "projectUniqueName": "E:\\software development\\CANHostV0.1\\Signal\\Signal.csproj",
       "projectName": "Signal",
-      "projectPath": "Z:\\JOB\\CAN HOST COMPUTER\\CANHOSTV1.0\\Signal\\Signal.csproj",
-      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "Z:\\JOB\\CAN HOST COMPUTER\\CANHOSTV1.0\\Signal\\obj\\",
+      "projectPath": "E:\\software development\\CANHostV0.1\\Signal\\Signal.csproj",
+      "packagesPath": "C:\\Users\\shawphon\\.nuget\\packages\\",
+      "outputPath": "E:\\software development\\CANHostV0.1\\Signal\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\shawphon\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -240,11 +236,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "Z:\\JOB\\CAN HOST COMPUTER\\CANHOSTV1.0\\CSVFileOpe\\CSVFileOperation.csproj": {
-              "projectPath": "Z:\\JOB\\CAN HOST COMPUTER\\CANHOSTV1.0\\CSVFileOpe\\CSVFileOperation.csproj"
+            "E:\\software development\\CANHostV0.1\\CSVFileOpe\\CSVFileOperation.csproj": {
+              "projectPath": "E:\\software development\\CANHostV0.1\\CSVFileOpe\\CSVFileOperation.csproj"
             },
-            "Z:\\JOB\\CAN HOST COMPUTER\\CANHOSTV1.0\\Driver\\Driver.csproj": {
-              "projectPath": "Z:\\JOB\\CAN HOST COMPUTER\\CANHOSTV1.0\\Driver\\Driver.csproj"
+            "E:\\software development\\CANHostV0.1\\Driver\\Driver.csproj": {
+              "projectPath": "E:\\software development\\CANHostV0.1\\Driver\\Driver.csproj"
             }
           }
         }
@@ -275,7 +271,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

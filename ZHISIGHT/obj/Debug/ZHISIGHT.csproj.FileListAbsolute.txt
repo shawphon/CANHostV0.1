@@ -158,3 +158,40 @@ Z:\JOB\CAN HOST COMPUTER\CANHOSTV1.0\ZHISIGHT\obj\Debug\ZHISIGHT.csproj.Generate
 Z:\JOB\CAN HOST COMPUTER\CANHOSTV1.0\ZHISIGHT\obj\Debug\ZHISIGHT.csproj.CopyComplete
 Z:\JOB\CAN HOST COMPUTER\CANHOSTV1.0\ZHISIGHT\obj\Debug\ZHISIGHT.exe
 Z:\JOB\CAN HOST COMPUTER\CANHOSTV1.0\ZHISIGHT\obj\Debug\ZHISIGHT.pdb
+E:\software development\CANHostV0.1\ZHISIGHT\bin\Debug\ControlCAN.dll
+E:\software development\CANHostV0.1\ZHISIGHT\bin\Debug\kerneldlls\CAN232.dll
+E:\software development\CANHostV0.1\ZHISIGHT\bin\Debug\kerneldlls\CANDTU_NET.dll
+E:\software development\CANHostV0.1\ZHISIGHT\bin\Debug\kerneldlls\CANETE.dll
+E:\software development\CANHostV0.1\ZHISIGHT\bin\Debug\kerneldlls\CANET_TCP.dll
+E:\software development\CANHostV0.1\ZHISIGHT\bin\Debug\kerneldlls\CANWIFI_TCP.dll
+E:\software development\CANHostV0.1\ZHISIGHT\bin\Debug\kerneldlls\CANWIFI_UDP.dll
+E:\software development\CANHostV0.1\ZHISIGHT\bin\Debug\kerneldlls\gisadll.dll
+E:\software development\CANHostV0.1\ZHISIGHT\bin\Debug\kerneldlls\gpcidll.dll
+E:\software development\CANHostV0.1\ZHISIGHT\bin\Debug\kerneldlls\isa5420.dll
+E:\software development\CANHostV0.1\ZHISIGHT\bin\Debug\kerneldlls\kerneldll.ini
+E:\software development\CANHostV0.1\ZHISIGHT\bin\Debug\kerneldlls\PC104C2.dll
+E:\software development\CANHostV0.1\ZHISIGHT\bin\Debug\kerneldlls\PC104CAN.dll
+E:\software development\CANHostV0.1\ZHISIGHT\bin\Debug\kerneldlls\PCI5121.dll
+E:\software development\CANHostV0.1\ZHISIGHT\bin\Debug\kerneldlls\usbcan.dll
+E:\software development\CANHostV0.1\ZHISIGHT\bin\Debug\LibDBCManager.dll
+E:\software development\CANHostV0.1\ZHISIGHT\bin\Debug\LibDBCManager.lib
+E:\software development\CANHostV0.1\ZHISIGHT\bin\Debug\winmm.dll
+E:\software development\CANHostV0.1\ZHISIGHT\bin\Debug\ZHISIGHT.exe.config
+E:\software development\CANHostV0.1\ZHISIGHT\bin\Debug\ZHISIGHT.exe
+E:\software development\CANHostV0.1\ZHISIGHT\bin\Debug\ZHISIGHT.pdb
+E:\software development\CANHostV0.1\ZHISIGHT\bin\Debug\CSVFileOpe.dll
+E:\software development\CANHostV0.1\ZHISIGHT\bin\Debug\Driver.dll
+E:\software development\CANHostV0.1\ZHISIGHT\bin\Debug\Signal.dll
+E:\software development\CANHostV0.1\ZHISIGHT\bin\Debug\CSVFileOpe.pdb
+E:\software development\CANHostV0.1\ZHISIGHT\bin\Debug\Driver.pdb
+E:\software development\CANHostV0.1\ZHISIGHT\bin\Debug\Signal.pdb
+E:\software development\CANHostV0.1\ZHISIGHT\obj\Debug\ZHISIGHT.csprojAssemblyReference.cache
+E:\software development\CANHostV0.1\ZHISIGHT\obj\Debug\ZHISIGHT.CommunicationForm.resources
+E:\software development\CANHostV0.1\ZHISIGHT\obj\Debug\ZHISIGHT.ConfigFileForm.resources
+E:\software development\CANHostV0.1\ZHISIGHT\obj\Debug\ZHISIGHT.Form1.resources
+E:\software development\CANHostV0.1\ZHISIGHT\obj\Debug\ZHISIGHT.Properties.Resources.resources
+E:\software development\CANHostV0.1\ZHISIGHT\obj\Debug\ZHISIGHT.csproj.GenerateResource.cache
+E:\software development\CANHostV0.1\ZHISIGHT\obj\Debug\ZHISIGHT.csproj.CoreCompileInputs.cache
+E:\software development\CANHostV0.1\ZHISIGHT\obj\Debug\ZHISIGHT.csproj.CopyComplete
+E:\software development\CANHostV0.1\ZHISIGHT\obj\Debug\ZHISIGHT.exe
+E:\software development\CANHostV0.1\ZHISIGHT\obj\Debug\ZHISIGHT.pdb

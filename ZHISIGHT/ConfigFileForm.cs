@@ -58,10 +58,5 @@ namespace ZHISIGHT
             strDBCPath = string.Join(System.IO.Path.GetDirectoryName(openFileDialog1.FileName), openFileDialog1.FileName); //路径和名          
             textBox1.Text = strDBCPath;
         }
-
-        private void ConfigFileForm_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

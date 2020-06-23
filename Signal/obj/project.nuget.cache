@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "CZjzJ8qXP5WVmGVHC/k3EL7cJcSuo6SY2W0wjuQCPOffE12GcAvdHoW14O65za6U0WWQNA9qyMllQVRJbH0E5Q==",
+  "success": true,
+  "projectFilePath": "E:\\software development\\CANHostV0.1\\Signal\\Signal.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\shawphon\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\shawphon\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

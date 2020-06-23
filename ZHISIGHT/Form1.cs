@@ -285,6 +285,7 @@ namespace ZHISIGHT
         private void Timer0_Tick(object sender, EventArgs e)
         {
             MyTextBox textBox1;
+            ProgressBar progressBar;
             double value;
             //获取TransGroup中的所有的控件并发送
             foreach (var textBox in TransGroup.Controls)
@@ -309,6 +310,14 @@ namespace ZHISIGHT
                     {
                         textBox1.Text = textBox1.StrValue;
                     }
+                }
+
+                //更新progressbar的信息
+                if (textBox is ProgressBar)
+                {
+                    progressBar = textBox as ProgressBar;
+                    string[] str = progressBar.Name.Trim().Split(' ');     //str[0]: MessageID, str[1]: SiganlName
+                    progressBar.Value = (int)IntfCANSignal.GetSignalByNameToApp(Convert.ToUInt32(str[0]), System.Text.Encoding.UTF8.GetBytes(str[1]));
                 }
             }
 
@@ -419,20 +428,37 @@ namespace ZHISIGHT
                             yPosition = 20;
                             xPosition = 20 + 250 * count;
                         }
-                        MyTextBox textBox = new MyTextBox
+                        //添加进度条还是文本框
+                        if (dataRows[j]["SignalName"].ToString().ToLower().Contains("life") & groupBox.Text == "Transmitted")
                         {
-                            Location = new System.Drawing.Point(xPosition + ((labels.Size.Width + 10) > 130 ? (labels.Size.Width + 10) : 130), yPosition),
-                            Name = list[i] + " " + dataRows[j]["SignalName"].ToString(),
-                            Size = new System.Drawing.Size(50, 28),
-                            Text = "0",
-                            StrValue = "0",
-                        };
-                        if (groupBox.Text == "Transmitted")
-                        {
-                            textBox.KeyPress += TextBox_KeyPress; ;
+                            System.Windows.Forms.ProgressBar progressBar1 = new ProgressBar();
+                            // 
+                            // progressBar1
+                            // 
+                            progressBar1.Location = new System.Drawing.Point(xPosition + ((labels.Size.Width + 10) > 130 ? (labels.Size.Width + 10) : 130), yPosition);
+                            progressBar1.Name = list[i] + " " + dataRows[j]["SignalName"].ToString();
+                            progressBar1.Size = new System.Drawing.Size(50, 20);
+                            progressBar1.Maximum = 255;
+                            progressBar1.Minimum = 0;
+                            groupBox.Controls.Add(progressBar1);
                         }
+                        else
+                        {
+                            MyTextBox textBox = new MyTextBox
+                            {
+                                Location = new System.Drawing.Point(xPosition + ((labels.Size.Width + 10) > 130 ? (labels.Size.Width + 10) : 130), yPosition),
+                                Name = list[i] + " " + dataRows[j]["SignalName"].ToString(),
+                                Size = new System.Drawing.Size(50, 28),
+                                Text = "0",
+                                StrValue = "0",
+                            };
+                            if (groupBox.Text == "Transmitted")
+                            {
+                                textBox.KeyPress += TextBox_KeyPress; ;
+                            }
 
-                        groupBox.Controls.Add(textBox);
+                            groupBox.Controls.Add(textBox);
+                        }
 
                         yPosition += 25;
                     }

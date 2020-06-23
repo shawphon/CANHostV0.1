@@ -7,6 +7,7 @@ using System.ComponentModel;
 using CANDriverLayer;
 using CSVFileOperationPart;
 using System.Threading;
+using System.Timers;
 
 namespace CANSignalLayer
 {
@@ -26,9 +27,11 @@ namespace CANSignalLayer
         private string strStableCSVName;
         DBC.OnSend sender;
         private Dictionary<uint, uint> dicMessageIDandPeriod = new Dictionary<uint, uint>();//消息ID和周期值字典
+        private Dictionary<string, uint> dicMessagespaceandSignalName = new Dictionary<string, uint>();//消息ID和周期值字典
         //System.Timers.Timer recTimer;
         //System.Timers.Timer recTimer;
         List<MillisecondTimer> listSendTimer = new List<MillisecondTimer>();
+        List<AutoLifeTimer> autoLifeTimer = new List<AutoLifeTimer>();
         DataRow dr;
         Ctx ctx = new Ctx();
         IntPtr ptCtx;
@@ -49,6 +52,7 @@ namespace CANSignalLayer
         public List<MillisecondTimer> ListSendTimer { get => listSendTimer; set => listSendTimer = value; }
         //public System.Timers.Timer RecTimer { get => recTimer; set => recTimer = value; }
         public uint CountCSVRows { get => countCSVRows; set => countCSVRows = value; }
+        public Dictionary<string, uint> DicMessagespaceSignalNameandPeriod { get => dicMessagespaceandSignalName; set => dicMessagespaceandSignalName = value; }
         #endregion
 
         #region 构造函数
@@ -83,6 +87,7 @@ namespace CANSignalLayer
                 foreach (DataRow dr in dataRows)
                 {
                     DicMessageIDandPeriod[Convert.ToUInt32(dr["MessageID"])] = Convert.ToUInt32(dr["Period"]);
+                    dicMessagespaceandSignalName[Convert.ToUInt32(dr["MessageID"]).ToString() + " " + dr["SignalName"].ToString()] = Convert.ToUInt32(dr["Period"]);
                 }
 
                 for (int i = 0; i < recFrame.Length; i++)       //初始化接收的帧的TimeFlag，使得时间戳信息有效。
@@ -96,6 +101,7 @@ namespace CANSignalLayer
                 recThread = new Thread(ReceiveandUnpack);
                 recThread.IsBackground = true;
 
+                //定周期发送消息 定时
                 listSendTimer.Clear();
                 if (DicMessageIDandPeriod != null)
                 {
@@ -108,12 +114,40 @@ namespace CANSignalLayer
                     }
                 }
 
+                //life信号
+                autoLifeTimer.Clear();
+                if (dicMessagespaceandSignalName != null)
+                {
+                    foreach (string key in dicMessagespaceandSignalName.Keys)
+                    {
+                        string[] str = key.Trim().Split(' ');
+                        AutoLifeTimer lifeTimer = new AutoLifeTimer(Convert.ToUInt32(str[0]), str[1], dicMessagespaceandSignalName[key]);
+                        lifeTimer.Enabled = false;
+                        lifeTimer.Elapsed += LifeTimer_Elapsed;
+                        autoLifeTimer.Add(lifeTimer);
+                    }
+                }
+
                 //dr = savedCSV.DataTable.NewRow();
             }
             catch (Exception)
             {
 
             }
+
+        }
+
+        private void LifeTimer_Elapsed(object sender, ElapsedEventArgs e)
+        {
+            AutoLifeTimer milliesecond = sender as AutoLifeTimer;
+
+            if (milliesecond.CountLife == 255)
+            {
+                milliesecond.CountLife = 0;
+            }
+            milliesecond.CountLife++;
+
+            SetSignalByNameFromApp(milliesecond.MessageID, System.Text.Encoding.UTF8.GetBytes(milliesecond.SignalName), milliesecond.CountLife);
 
         }
 
@@ -272,6 +306,10 @@ namespace CANSignalLayer
             {
                 listSendTimer[i].Start();
             }
+            for (int i = 0; i < autoLifeTimer.Count; i++)
+            {
+                autoLifeTimer[i].Start();
+            }
         }
 
         public void StopTimer()
@@ -283,6 +321,11 @@ namespace CANSignalLayer
             {
                 //listSendTimer[i].Enabled = false;
                 listSendTimer[i].Stop();
+            }
+            for (int i = 0; i < autoLifeTimer.Count; i++)
+            {
+                //listSendTimer[i].Enabled = false;
+                autoLifeTimer[i].Stop();
             }
         }
 
@@ -374,6 +417,25 @@ namespace CANSignalLayer
             Interval = period;
         }
     }
+    public class AutoLifeTimer : System.Timers.Timer
+    {
+        private UInt32 messageID;
+        private string signalName;
+        private UInt32 countLife = 0;
+
+
+        public uint MessageID { get => messageID; set => messageID = value; }
+        public string SignalName { get => signalName; set => signalName = value; }
+        public uint CountLife { get => countLife; set => countLife = value; }
+
+        public AutoLifeTimer(UInt32 msgID, string signalName, UInt32 period)
+        {
+            this.messageID = msgID;
+            this.signalName = signalName;
+            this.Interval = period;
+        }
+    }
+
     public sealed class MillisecondTimer : MyTimer, IComponent, IDisposable
     {
         #region 变量成员

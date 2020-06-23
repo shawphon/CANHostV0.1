@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\JOB\\CAN HOST COMPUTER\\CANHOSTV1.0\\Driver\\Driver.csproj": {}
+    "E:\\software development\\CANHostV0.1\\Driver\\Driver.csproj": {}
   },
   "projects": {
-    "Z:\\JOB\\CAN HOST COMPUTER\\CANHOSTV1.0\\Driver\\Driver.csproj": {
+    "E:\\software development\\CANHostV0.1\\Driver\\Driver.csproj": {
       "version": "1.0.1",
       "restore": {
-        "projectUniqueName": "Z:\\JOB\\CAN HOST COMPUTER\\CANHOSTV1.0\\Driver\\Driver.csproj",
+        "projectUniqueName": "E:\\software development\\CANHostV0.1\\Driver\\Driver.csproj",
         "projectName": "Driver",
-        "projectPath": "Z:\\JOB\\CAN HOST COMPUTER\\CANHOSTV1.0\\Driver\\Driver.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "Z:\\JOB\\CAN HOST COMPUTER\\CANHOSTV1.0\\Driver\\obj\\",
+        "projectPath": "E:\\software development\\CANHostV0.1\\Driver\\Driver.csproj",
+        "packagesPath": "C:\\Users\\shawphon\\.nuget\\packages\\",
+        "outputPath": "E:\\software development\\CANHostV0.1\\Driver\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\shawphon\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,7 +55,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
