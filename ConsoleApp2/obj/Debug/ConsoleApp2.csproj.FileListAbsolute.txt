@@ -1,0 +1,69 @@
+C:\Users\shawphon\Desktop\DV上位机项目\版本控制\DVHostV0002.2\ConsoleApp2\bin\Debug\ControlCAN.dll
+C:\Users\shawphon\Desktop\DV上位机项目\版本控制\DVHostV0002.2\ConsoleApp2\bin\Debug\kerneldlls\CAN232.dll
+C:\Users\shawphon\Desktop\DV上位机项目\版本控制\DVHostV0002.2\ConsoleApp2\bin\Debug\kerneldlls\CANDTU_NET.dll
+C:\Users\shawphon\Desktop\DV上位机项目\版本控制\DVHostV0002.2\ConsoleApp2\bin\Debug\kerneldlls\CANETE.dll
+C:\Users\shawphon\Desktop\DV上位机项目\版本控制\DVHostV0002.2\ConsoleApp2\bin\Debug\kerneldlls\CANET_TCP.dll
+C:\Users\shawphon\Desktop\DV上位机项目\版本控制\DVHostV0002.2\ConsoleApp2\bin\Debug\kerneldlls\CANWIFI_TCP.dll
+C:\Users\shawphon\Desktop\DV上位机项目\版本控制\DVHostV0002.2\ConsoleApp2\bin\Debug\kerneldlls\CANWIFI_UDP.dll
+C:\Users\shawphon\Desktop\DV上位机项目\版本控制\DVHostV0002.2\ConsoleApp2\bin\Debug\kerneldlls\gisadll.dll
+C:\Users\shawphon\Desktop\DV上位机项目\版本控制\DVHostV0002.2\ConsoleApp2\bin\Debug\kerneldlls\gpcidll.dll
+C:\Users\shawphon\Desktop\DV上位机项目\版本控制\DVHostV0002.2\ConsoleApp2\bin\Debug\kerneldlls\isa5420.dll
+C:\Users\shawphon\Desktop\DV上位机项目\版本控制\DVHostV0002.2\ConsoleApp2\bin\Debug\kerneldlls\kerneldll.ini
+C:\Users\shawphon\Desktop\DV上位机项目\版本控制\DVHostV0002.2\ConsoleApp2\bin\Debug\kerneldlls\PC104C2.dll
+C:\Users\shawphon\Desktop\DV上位机项目\版本控制\DVHostV0002.2\ConsoleApp2\bin\Debug\kerneldlls\PC104CAN.dll
+C:\Users\shawphon\Desktop\DV上位机项目\版本控制\DVHostV0002.2\ConsoleApp2\bin\Debug\kerneldlls\PCI5121.dll
+C:\Users\shawphon\Desktop\DV上位机项目\版本控制\DVHostV0002.2\ConsoleApp2\bin\Debug\kerneldlls\usbcan.dll
+C:\Users\shawphon\Desktop\DV上位机项目\版本控制\DVHostV0002.2\ConsoleApp2\bin\Debug\dbc.ini
+C:\Users\shawphon\Desktop\DV上位机项目\版本控制\DVHostV0002.2\ConsoleApp2\bin\Debug\kerneldlls\pci9810b.dll
+C:\Users\shawphon\Desktop\DV上位机项目\版本控制\DVHostV0002.2\ConsoleApp2\bin\Debug\kerneldlls\pci9820b.dll
+C:\Users\shawphon\Desktop\DV上位机项目\版本控制\DVHostV0002.2\ConsoleApp2\bin\Debug\kerneldlls\pci9820i.dll
+C:\Users\shawphon\Desktop\DV上位机项目\版本控制\DVHostV0002.2\ConsoleApp2\bin\Debug\kerneldlls\pci9840b.dll
+C:\Users\shawphon\Desktop\DV上位机项目\版本控制\DVHostV0002.2\ConsoleApp2\bin\Debug\kerneldlls\pcie9140_x64.dll
+C:\Users\shawphon\Desktop\DV上位机项目\版本控制\DVHostV0002.2\ConsoleApp2\bin\Debug\kerneldlls\pec9920.dll
+C:\Users\shawphon\Desktop\DV上位机项目\版本控制\DVHostV0002.2\ConsoleApp2\bin\Debug\kerneldlls\USBCAN_8E_U_x64.dll
+C:\Users\shawphon\Desktop\DV上位机项目\版本控制\DVHostV0002.2\ConsoleApp2\bin\Debug\LibDBCManager.dll
+C:\Users\shawphon\Desktop\DV上位机项目\版本控制\DVHostV0002.2\ConsoleApp2\bin\Debug\ConsoleApp2.exe.config
+C:\Users\shawphon\Desktop\DV上位机项目\版本控制\DVHostV0002.2\ConsoleApp2\bin\Debug\ConsoleApp2.exe
+C:\Users\shawphon\Desktop\DV上位机项目\版本控制\DVHostV0002.2\ConsoleApp2\bin\Debug\ConsoleApp2.pdb
+C:\Users\shawphon\Desktop\DV上位机项目\版本控制\DVHostV0002.2\ConsoleApp2\bin\Debug\CANDriverLayer.dll
+C:\Users\shawphon\Desktop\DV上位机项目\版本控制\DVHostV0002.2\ConsoleApp2\bin\Debug\CANSignalLayer.dll
+C:\Users\shawphon\Desktop\DV上位机项目\版本控制\DVHostV0002.2\ConsoleApp2\bin\Debug\CANDriverLayer.pdb
+C:\Users\shawphon\Desktop\DV上位机项目\版本控制\DVHostV0002.2\ConsoleApp2\bin\Debug\CANSignalLayer.pdb
+C:\Users\shawphon\Desktop\DV上位机项目\版本控制\DVHostV0002.2\ConsoleApp2\obj\Debug\ConsoleApp2.csprojAssemblyReference.cache
+C:\Users\shawphon\Desktop\DV上位机项目\版本控制\DVHostV0002.2\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.CoreCompileInputs.cache
+C:\Users\shawphon\Desktop\DV上位机项目\版本控制\DVHostV0002.2\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.CopyComplete
+C:\Users\shawphon\Desktop\DV上位机项目\版本控制\DVHostV0002.2\ConsoleApp2\obj\Debug\ConsoleApp2.exe
+C:\Users\shawphon\Desktop\DV上位机项目\版本控制\DVHostV0002.2\ConsoleApp2\obj\Debug\ConsoleApp2.pdb
+Z:\JOB\CAN HOST COMPUTER\DVHostV0003.1\ConsoleApp2\obj\Debug\ConsoleApp2.csprojAssemblyReference.cache
+Z:\JOB\CAN HOST COMPUTER\DVHostV0003.1\ConsoleApp2\obj\Debug\ConsoleApp2.exe
+Z:\JOB\CAN HOST COMPUTER\DVHostV0003.1\ConsoleApp2\obj\Debug\ConsoleApp2.pdb
+Z:\JOB\CAN HOST COMPUTER\DVHostV0003.2\ConsoleApp2\obj\Debug\ConsoleApp2.csprojAssemblyReference.cache
+Z:\JOB\CAN HOST COMPUTER\DVHostV0003.2\ConsoleApp2\bin\Debug\ControlCAN.dll
+Z:\JOB\CAN HOST COMPUTER\DVHostV0003.2\ConsoleApp2\bin\Debug\kerneldlls\CAN232.dll
+Z:\JOB\CAN HOST COMPUTER\DVHostV0003.2\ConsoleApp2\bin\Debug\kerneldlls\CANETE.dll
+Z:\JOB\CAN HOST COMPUTER\DVHostV0003.2\ConsoleApp2\bin\Debug\kerneldlls\CANET_TCP.dll
+Z:\JOB\CAN HOST COMPUTER\DVHostV0003.2\ConsoleApp2\bin\Debug\kerneldlls\CANWIFI_TCP.dll
+Z:\JOB\CAN HOST COMPUTER\DVHostV0003.2\ConsoleApp2\bin\Debug\kerneldlls\CANWIFI_UDP.dll
+Z:\JOB\CAN HOST COMPUTER\DVHostV0003.2\ConsoleApp2\bin\Debug\kerneldlls\gisadll.dll
+Z:\JOB\CAN HOST COMPUTER\DVHostV0003.2\ConsoleApp2\bin\Debug\kerneldlls\gpcidll.dll
+Z:\JOB\CAN HOST COMPUTER\DVHostV0003.2\ConsoleApp2\bin\Debug\kerneldlls\isa5420.dll
+Z:\JOB\CAN HOST COMPUTER\DVHostV0003.2\ConsoleApp2\bin\Debug\kerneldlls\kerneldll.ini
+Z:\JOB\CAN HOST COMPUTER\DVHostV0003.2\ConsoleApp2\bin\Debug\kerneldlls\PC104C2.dll
+Z:\JOB\CAN HOST COMPUTER\DVHostV0003.2\ConsoleApp2\bin\Debug\kerneldlls\PC104CAN.dll
+Z:\JOB\CAN HOST COMPUTER\DVHostV0003.2\ConsoleApp2\bin\Debug\kerneldlls\PCI5121.dll
+Z:\JOB\CAN HOST COMPUTER\DVHostV0003.2\ConsoleApp2\bin\Debug\kerneldlls\usbcan.dll
+Z:\JOB\CAN HOST COMPUTER\DVHostV0003.2\ConsoleApp2\bin\Debug\LibDBCManager.dll
+Z:\JOB\CAN HOST COMPUTER\DVHostV0003.2\ConsoleApp2\bin\Debug\winmm.dll
+Z:\JOB\CAN HOST COMPUTER\DVHostV0003.2\ConsoleApp2\bin\Debug\ConsoleApp2.exe.config
+Z:\JOB\CAN HOST COMPUTER\DVHostV0003.2\ConsoleApp2\bin\Debug\ConsoleApp2.exe
+Z:\JOB\CAN HOST COMPUTER\DVHostV0003.2\ConsoleApp2\bin\Debug\ConsoleApp2.pdb
+Z:\JOB\CAN HOST COMPUTER\DVHostV0003.2\ConsoleApp2\bin\Debug\CSVFileOpe.dll
+Z:\JOB\CAN HOST COMPUTER\DVHostV0003.2\ConsoleApp2\bin\Debug\Driver.dll
+Z:\JOB\CAN HOST COMPUTER\DVHostV0003.2\ConsoleApp2\bin\Debug\Signal.dll
+Z:\JOB\CAN HOST COMPUTER\DVHostV0003.2\ConsoleApp2\bin\Debug\CSVFileOpe.pdb
+Z:\JOB\CAN HOST COMPUTER\DVHostV0003.2\ConsoleApp2\bin\Debug\Driver.pdb
+Z:\JOB\CAN HOST COMPUTER\DVHostV0003.2\ConsoleApp2\bin\Debug\Signal.pdb
+Z:\JOB\CAN HOST COMPUTER\DVHostV0003.2\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.CopyComplete
+Z:\JOB\CAN HOST COMPUTER\DVHostV0003.2\ConsoleApp2\obj\Debug\ConsoleApp2.exe
+Z:\JOB\CAN HOST COMPUTER\DVHostV0003.2\ConsoleApp2\obj\Debug\ConsoleApp2.pdb
+Z:\JOB\CAN HOST COMPUTER\DVHostV0003.2\ConsoleApp2\bin\Debug\kerneldlls\CANDTU_NET.dll
