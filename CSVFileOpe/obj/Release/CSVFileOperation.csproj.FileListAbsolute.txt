@@ -1,0 +1,6 @@
+E:\software development\CANHostV0.1\CSVFileOpe\bin\Release\CSVFileOpe.dll
+E:\software development\CANHostV0.1\CSVFileOpe\bin\Release\CSVFileOpe.pdb
+E:\software development\CANHostV0.1\CSVFileOpe\obj\Release\CSVFileOperation.csprojAssemblyReference.cache
+E:\software development\CANHostV0.1\CSVFileOpe\obj\Release\CSVFileOperation.csproj.CoreCompileInputs.cache
+E:\software development\CANHostV0.1\CSVFileOpe\obj\Release\CSVFileOpe.dll
+E:\software development\CANHostV0.1\CSVFileOpe\obj\Release\CSVFileOpe.pdb

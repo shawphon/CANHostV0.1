@@ -404,8 +404,9 @@ namespace ZHISIGHT
                     {
                         AutoSize = true,
                         Location = new System.Drawing.Point(xPosition, yPosition),   //添加message控件
-                        ForeColor = Color.Blue
-                    };
+                        ForeColor = Color.Blue,
+                        Font = new System.Drawing.Font("微软雅黑", 9F)
+                };
                     label.Name = "label" + list[i];
                     label.Size = new System.Drawing.Size(62, 18);
                     label.Text = list[i];
