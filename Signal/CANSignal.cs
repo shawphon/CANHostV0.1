@@ -114,6 +114,7 @@ namespace CANSignalLayer
                 {
                     IsBackground = true
                 };
+                recThread.Start();
 
                 //定周期发送消息 定时
                 listSendTimer.Clear();
@@ -243,7 +244,11 @@ namespace CANSignalLayer
         {
             while (true)
             {
-                RecFrame_UnpackToMessage();
+                if (recThreadFlag)
+                {
+                    RecFrame_UnpackToMessage();
+                }
+
                 Thread.Sleep(100);
             }
         }
@@ -315,7 +320,6 @@ namespace CANSignalLayer
         public void StartTimer()
         {
             recThreadFlag = true;
-            recThread.Start();
             //RecTimer.Start();
             for (int i = 0; i < listSendTimer.Count; i++)
             {
@@ -330,9 +334,6 @@ namespace CANSignalLayer
         public void StopTimer()
         {
             recThreadFlag = false;
-            recThread.Abort();
-            //RecTimer.Stop();
-            //RecTimer.Enabled = false;
             for (int i = 0; i < listSendTimer.Count; i++)
             {
                 //listSendTimer[i].Enabled = false;

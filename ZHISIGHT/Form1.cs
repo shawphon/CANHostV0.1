@@ -363,8 +363,8 @@ namespace ZHISIGHT
             else
             {
                 //关闭定时器
-                timer0.Stop();
                 intfCANSignal.StopTimer();
+                timer0.Stop();
                 IntfCANDriver.Reset();
                 toolStripButton.Text = "连接";
                 MessageBox.Show("通道关闭成功！", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);

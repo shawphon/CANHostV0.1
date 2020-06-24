@@ -55,8 +55,8 @@ namespace ZHISIGHT
             textCAN2AccMask.Text = "FFFFFFFF";
 
             //初始化组件 波特率
-            cobCAN1Baudrate.SelectedIndex = 5;
-            cobCAN2Baudrate.SelectedIndex = 5;
+            cobCAN1Baudrate.SelectedIndex = 3;
+            cobCAN2Baudrate.SelectedIndex = 3;
 
             //初始化组件工作模式
             cobCAN1Mode.SelectedIndex = 0;
