@@ -67,3 +67,35 @@ Z:\JOB\CAN HOST COMPUTER\DVHostV0003.2\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.
 Z:\JOB\CAN HOST COMPUTER\DVHostV0003.2\ConsoleApp2\obj\Debug\ConsoleApp2.exe
 Z:\JOB\CAN HOST COMPUTER\DVHostV0003.2\ConsoleApp2\obj\Debug\ConsoleApp2.pdb
 Z:\JOB\CAN HOST COMPUTER\DVHostV0003.2\ConsoleApp2\bin\Debug\kerneldlls\CANDTU_NET.dll
+E:\software development\CANHostV0.1\ConsoleApp2\bin\Debug\ControlCAN.dll
+E:\software development\CANHostV0.1\ConsoleApp2\bin\Debug\kerneldlls\CAN232.dll
+E:\software development\CANHostV0.1\ConsoleApp2\bin\Debug\kerneldlls\CANDTU_NET.dll
+E:\software development\CANHostV0.1\ConsoleApp2\bin\Debug\kerneldlls\CANETE.dll
+E:\software development\CANHostV0.1\ConsoleApp2\bin\Debug\kerneldlls\CANET_TCP.dll
+E:\software development\CANHostV0.1\ConsoleApp2\bin\Debug\kerneldlls\CANWIFI_TCP.dll
+E:\software development\CANHostV0.1\ConsoleApp2\bin\Debug\kerneldlls\CANWIFI_UDP.dll
+E:\software development\CANHostV0.1\ConsoleApp2\bin\Debug\kerneldlls\gisadll.dll
+E:\software development\CANHostV0.1\ConsoleApp2\bin\Debug\kerneldlls\gpcidll.dll
+E:\software development\CANHostV0.1\ConsoleApp2\bin\Debug\kerneldlls\isa5420.dll
+E:\software development\CANHostV0.1\ConsoleApp2\bin\Debug\kerneldlls\kerneldll.ini
+E:\software development\CANHostV0.1\ConsoleApp2\bin\Debug\kerneldlls\PC104C2.dll
+E:\software development\CANHostV0.1\ConsoleApp2\bin\Debug\kerneldlls\PC104CAN.dll
+E:\software development\CANHostV0.1\ConsoleApp2\bin\Debug\kerneldlls\PCI5121.dll
+E:\software development\CANHostV0.1\ConsoleApp2\bin\Debug\kerneldlls\usbcan.dll
+E:\software development\CANHostV0.1\ConsoleApp2\bin\Debug\LibDBCManager.dll
+E:\software development\CANHostV0.1\ConsoleApp2\bin\Debug\LibDBCManager.lib
+E:\software development\CANHostV0.1\ConsoleApp2\bin\Debug\winmm.dll
+E:\software development\CANHostV0.1\ConsoleApp2\bin\Debug\ConsoleApp2.exe.config
+E:\software development\CANHostV0.1\ConsoleApp2\bin\Debug\ConsoleApp2.exe
+E:\software development\CANHostV0.1\ConsoleApp2\bin\Debug\ConsoleApp2.pdb
+E:\software development\CANHostV0.1\ConsoleApp2\bin\Debug\CSVFileOpe.dll
+E:\software development\CANHostV0.1\ConsoleApp2\bin\Debug\Driver.dll
+E:\software development\CANHostV0.1\ConsoleApp2\bin\Debug\Signal.dll
+E:\software development\CANHostV0.1\ConsoleApp2\bin\Debug\CSVFileOpe.pdb
+E:\software development\CANHostV0.1\ConsoleApp2\bin\Debug\Driver.pdb
+E:\software development\CANHostV0.1\ConsoleApp2\bin\Debug\Signal.pdb
+E:\software development\CANHostV0.1\ConsoleApp2\obj\Debug\ConsoleApp2.csprojAssemblyReference.cache
+E:\software development\CANHostV0.1\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.CoreCompileInputs.cache
+E:\software development\CANHostV0.1\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.CopyComplete
+E:\software development\CANHostV0.1\ConsoleApp2\obj\Debug\ConsoleApp2.exe
+E:\software development\CANHostV0.1\ConsoleApp2\obj\Debug\ConsoleApp2.pdb

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace CANSignalLayer
 {
@@ -43,6 +44,9 @@ namespace CANSignalLayer
         void StopTimer();
 
         void Close();
+
+        Dictionary<string, string> GetDicMessSignalNameAndBindingName();
+        Dictionary<string, uint> GetDicBindingAndValue();
 
 
     }

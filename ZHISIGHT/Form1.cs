@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using CANDriverLayer;
 using CANSignalLayer;
@@ -29,6 +30,7 @@ namespace ZHISIGHT
         private Dictionary<uint, int> DevInd_Sts = new Dictionary<uint, int>();
         private ConfigFileForm configFileForm;
         CommunicationForm commuForm;
+
 
         #endregion
 
@@ -164,7 +166,10 @@ namespace ZHISIGHT
         private ToolStripButton toolStripButton = new ToolStripButton();
         private ToolStrip toolStrip = new ToolStrip();
         private Timer timer0 = new Timer();
+        private Dictionary<string, uint> dicBindingAndValue = new Dictionary<string, uint>();
+        private Dictionary<string, string> dicMessSignalNameAndBindingName = new Dictionary<string, string>();
         MyTextBox textBox1;
+        MyTextBox textBox2;
         ProgressBar progressBar;
         #endregion
 
@@ -186,6 +191,9 @@ namespace ZHISIGHT
             intfCANDriver = iCANDriver;
             intfCANSignal = iCANSignal;
             cSV = csv;
+
+            dicBindingAndValue = intfCANSignal.GetDicBindingAndValue();
+            dicMessSignalNameAndBindingName = intfCANSignal.GetDicMessSignalNameAndBindingName();
 
             toolStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).BeginInit();
@@ -344,7 +352,7 @@ namespace ZHISIGHT
                     MessageBox.Show("通道打开成功！", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     //开启定时器
                     intfCANSignal.StartTimer();
-                    timer0.Start();
+                    timer0.Start();                    
                 }
                 else
                 {
@@ -475,6 +483,42 @@ namespace ZHISIGHT
                 try
                 {
                     myTextBox.StrValue = Convert.ToDouble(myTextBox.Text).ToString();
+
+                    foreach (var keyValuePair in dicBindingAndValue)   //binding signal name and its value
+                    {
+                        if (myTextBox.Name.Contains(keyValuePair.Key))    //当前改动的textbox是约束的信号 201441703 Enable
+                        {
+                            foreach (var textBox in TransGroup.Controls)
+                            {
+                                if (textBox is MyTextBox)
+                                {
+                                    textBox2 = textBox as MyTextBox;
+                                    foreach (var keyvalpair in dicMessSignalNameAndBindingName)
+                                    {
+                                        if (keyvalpair.Value == keyValuePair.Key)
+                                        {
+                                            if (textBox2.Name.Contains(keyvalpair.Key))
+                                            {
+                                                if (keyValuePair.Value == Convert.ToDouble(myTextBox.Text))
+                                                {
+                                                    textBox2.ReadOnly = true;
+                                                    textBox2.BackColor = Color.DarkGray;
+                                                }
+                                                else
+                                                {
+                                                    textBox2.ReadOnly = false;
+                                                    textBox2.BackColor = Color.White;
+                                                }
+
+                                            }
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+
+                    }
                 }
                 catch (Exception)
                 {

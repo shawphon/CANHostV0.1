@@ -20,7 +20,6 @@ Z:\JOB\CAN HOST COMPUTER\DVHostV0003.2\CSVFileOpe\obj\Debug\CSVFileOpe.dll
 Z:\JOB\CAN HOST COMPUTER\DVHostV0003.2\CSVFileOpe\obj\Debug\CSVFileOpe.pdb
 E:\software development\CANHostV0.1\CSVFileOpe\bin\Debug\CSVFileOpe.dll
 E:\software development\CANHostV0.1\CSVFileOpe\bin\Debug\CSVFileOpe.pdb
-E:\software development\CANHostV0.1\CSVFileOpe\obj\Debug\CSVFileOperation.csprojAssemblyReference.cache
 E:\software development\CANHostV0.1\CSVFileOpe\obj\Debug\CSVFileOperation.csproj.CoreCompileInputs.cache
 E:\software development\CANHostV0.1\CSVFileOpe\obj\Debug\CSVFileOpe.dll
 E:\software development\CANHostV0.1\CSVFileOpe\obj\Debug\CSVFileOpe.pdb

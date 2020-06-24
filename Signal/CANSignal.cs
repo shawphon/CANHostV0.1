@@ -28,7 +28,8 @@ namespace CANSignalLayer
         DBC.OnSend sender;
         private Dictionary<uint, uint> dicMessageIDandPeriod = new Dictionary<uint, uint>();//消息ID和周期值字典
         private Dictionary<string, uint> dicMessagespaceandSignalName = new Dictionary<string, uint>();//消息ID和周期值字典
-        private Dictionary<string, string> dicSignalNameAndBindingName = new Dictionary<string, string>();//消息ID和周期值字典
+        public static Dictionary<string, string> dicMessSignalNameAndBindingName = new Dictionary<string, string>();//消息ID和周期值字典
+        public static Dictionary<string, uint> dicBindingAndValue = new Dictionary<string, uint>();//消息ID和周期值字典
         //System.Timers.Timer recTimer;
         //System.Timers.Timer recTimer;
         List<MillisecondTimer> listSendTimer = new List<MillisecondTimer>();
@@ -36,7 +37,7 @@ namespace CANSignalLayer
         DataRow dr;
         Ctx ctx = new Ctx();
         IntPtr ptCtx;
-        Thread recThread;
+        private Thread recThread;
         private bool recThreadFlag = false;
         #endregion
 
@@ -94,7 +95,11 @@ namespace CANSignalLayer
                     {
                         dicMessagespaceandSignalName[Convert.ToUInt32(dr["MessageID"]).ToString() + " " + dr["SignalName"].ToString()] = Convert.ToUInt32(dr["Period"]);
                     }
-                    //dicSignalNameAndBindingName[Convert.ToUInt32(dr["MessageID"]).ToString() + " " + dr["SignalName"].ToString()]
+                    if (dr["Binding"] != null & dr["Readonlyvalue"] != null & dr["Binding"].ToString() != "")
+                    {
+                        dicMessSignalNameAndBindingName[dr["SignalName"].ToString()] = dr["Binding"].ToString();
+                        dicBindingAndValue[dr["Binding"].ToString()] = Convert.ToUInt32(dr["Readonlyvalue"]);
+                    }
                 }
 
                 for (int i = 0; i < recFrame.Length; i++)       //初始化接收的帧的TimeFlag，使得时间戳信息有效。
@@ -105,8 +110,10 @@ namespace CANSignalLayer
                 //recTimer = new System.Timers.Timer(100);
                 //recTimer.Enabled = false;
                 //recTimer.Elapsed += RecTimer_Elapsed;
-                recThread = new Thread(ReceiveandUnpack);
-                recThread.IsBackground = true;
+                recThread = new Thread(ReceiveandUnpack)
+                {
+                    IsBackground = true
+                };
 
                 //定周期发送消息 定时
                 listSendTimer.Clear();
@@ -407,6 +414,16 @@ namespace CANSignalLayer
         public void Close()
         {
             this.intfCANDriver.Close();
+        }
+
+        Dictionary<string, string> ICANSignal.GetDicMessSignalNameAndBindingName()
+        {
+            return dicMessSignalNameAndBindingName;
+        }
+
+        Dictionary<string, uint> ICANSignal.GetDicBindingAndValue()
+        {
+            return dicBindingAndValue;
         }
 
 
