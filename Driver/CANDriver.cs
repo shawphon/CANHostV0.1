@@ -235,6 +235,8 @@ namespace CANDriverLayer
             res = VCI_GetReceiveNum(devType, devInd, canInd);
             if (res == 0)
             {
+                Marshal.DestroyStructure(pt, typeof(VCI_CAN_OBJ));
+                Marshal.FreeHGlobal(pt);
                 return 0;
             }
             res = res > max ? max : res;

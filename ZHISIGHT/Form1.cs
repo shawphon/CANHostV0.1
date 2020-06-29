@@ -493,7 +493,7 @@ namespace ZHISIGHT
                             {
                                 if (textBox is MyTextBox)
                                 {
-                                    textBox2 = textBox as MyTextBox;
+                                    MyTextBox textBox2 = textBox as MyTextBox;
                                     foreach (var keyvalpair in dicMessSignalNameAndBindingName)
                                     {
                                         if (keyvalpair.Value == keyValuePair.Key)
@@ -530,6 +530,7 @@ namespace ZHISIGHT
             {
                 myTextBox.BackColor = Color.Yellow;
             }
+            
         }
         #endregion
     }

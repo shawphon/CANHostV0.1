@@ -216,11 +216,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\software development\\CANHostV0.1\\Signal\\Signal.csproj",
+      "projectUniqueName": "C:\\Users\\shawphon\\Desktop\\CANHostV0.1\\Signal\\Signal.csproj",
       "projectName": "Signal",
-      "projectPath": "E:\\software development\\CANHostV0.1\\Signal\\Signal.csproj",
+      "projectPath": "C:\\Users\\shawphon\\Desktop\\CANHostV0.1\\Signal\\Signal.csproj",
       "packagesPath": "C:\\Users\\shawphon\\.nuget\\packages\\",
-      "outputPath": "E:\\software development\\CANHostV0.1\\Signal\\obj\\",
+      "outputPath": "C:\\Users\\shawphon\\Desktop\\CANHostV0.1\\Signal\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\shawphon\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -236,11 +236,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "E:\\software development\\CANHostV0.1\\CSVFileOpe\\CSVFileOperation.csproj": {
-              "projectPath": "E:\\software development\\CANHostV0.1\\CSVFileOpe\\CSVFileOperation.csproj"
+            "C:\\Users\\shawphon\\Desktop\\CANHostV0.1\\CSVFileOpe\\CSVFileOperation.csproj": {
+              "projectPath": "C:\\Users\\shawphon\\Desktop\\CANHostV0.1\\CSVFileOpe\\CSVFileOperation.csproj"
             },
-            "E:\\software development\\CANHostV0.1\\Driver\\Driver.csproj": {
-              "projectPath": "E:\\software development\\CANHostV0.1\\Driver\\Driver.csproj"
+            "C:\\Users\\shawphon\\Desktop\\CANHostV0.1\\Driver\\Driver.csproj": {
+              "projectPath": "C:\\Users\\shawphon\\Desktop\\CANHostV0.1\\Driver\\Driver.csproj"
             }
           }
         }

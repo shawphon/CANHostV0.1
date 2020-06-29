@@ -23,3 +23,9 @@ E:\software development\CANHostV0.1\CSVFileOpe\bin\Debug\CSVFileOpe.pdb
 E:\software development\CANHostV0.1\CSVFileOpe\obj\Debug\CSVFileOperation.csproj.CoreCompileInputs.cache
 E:\software development\CANHostV0.1\CSVFileOpe\obj\Debug\CSVFileOpe.dll
 E:\software development\CANHostV0.1\CSVFileOpe\obj\Debug\CSVFileOpe.pdb
+C:\Users\shawphon\Desktop\CANHostV0.1\CSVFileOpe\bin\Debug\CSVFileOpe.dll
+C:\Users\shawphon\Desktop\CANHostV0.1\CSVFileOpe\bin\Debug\CSVFileOpe.pdb
+C:\Users\shawphon\Desktop\CANHostV0.1\CSVFileOpe\obj\Debug\CSVFileOperation.csprojAssemblyReference.cache
+C:\Users\shawphon\Desktop\CANHostV0.1\CSVFileOpe\obj\Debug\CSVFileOperation.csproj.CoreCompileInputs.cache
+C:\Users\shawphon\Desktop\CANHostV0.1\CSVFileOpe\obj\Debug\CSVFileOpe.dll
+C:\Users\shawphon\Desktop\CANHostV0.1\CSVFileOpe\obj\Debug\CSVFileOpe.pdb

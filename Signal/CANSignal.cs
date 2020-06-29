@@ -39,6 +39,10 @@ namespace CANSignalLayer
         IntPtr ptCtx;
         private Thread recThread;
         private bool recThreadFlag = false;
+
+        private DBC_CAN_OBJ frame = new DBC_CAN_OBJ();
+        IntPtr pMessage;
+        IntPtr pFrame;
         #endregion
 
         #region 字段封装
@@ -172,24 +176,6 @@ namespace CANSignalLayer
 
         private void OnSendFunc(IntPtr pContext, IntPtr ptObj)
         {
-            //DBC_CAN_OBJ dbcOBJ = new DBC_CAN_OBJ();
-            //dbcOBJ = (DBC_CAN_OBJ)Marshal.PtrToStructure(ptObj, typeof(DBC_CAN_OBJ));
-            //System.Diagnostics.Debug.WriteLine(System.Text.Encoding.Default.GetString(dbcOBJ.Data));
-            //byte[] data = dbcOBJ.Data;
-            //System.Diagnostics.Debug.WriteLine(dbcOBJ.Data);
-            //System.Diagnostics.Debug.WriteLine(dbcOBJ.DataLen);
-            //System.Diagnostics.Debug.WriteLine(dbcOBJ.ExternFlag);
-            //System.Diagnostics.Debug.WriteLine(dbcOBJ.ID);
-            //System.Diagnostics.Debug.WriteLine(dbcOBJ.RemoteFlag);
-            //System.Diagnostics.Debug.WriteLine(dbcOBJ.Reserved);
-            //System.Diagnostics.Debug.WriteLine(System.Text.Encoding.Default.GetString(dbcOBJ.Reserved));
-            //System.Diagnostics.Debug.WriteLine(dbcOBJ.SendType);
-            // System.Diagnostics.Debug.WriteLine(dbcOBJ.TimeFlag);
-            //System.Diagnostics.Debug.WriteLine(dbcOBJ.TimeStamp);
-            //System.Diagnostics.Debug.WriteLine("#############################################");
-
-
-
 
             ////pContext上下文这里用不到, IntPtr pObj转换为VCI_CAN_OBJ
             DBC_CAN_OBJ dbcOBJ = new DBC_CAN_OBJ();
@@ -204,6 +190,8 @@ namespace CANSignalLayer
             canOBJ.RemoteFlag = 0;
             canOBJ.SendType = 0;
             IntfCANDriver.Transmit(ref canOBJ, 1);  //利用ICANDriver 进行发送 ICANDriver a = new CANDriver()
+
+            Marshal.DestroyStructure(ptObj, typeof(DBC_CAN_OBJ));
 
         }
 
@@ -273,16 +261,16 @@ namespace CANSignalLayer
             {
                 return;
             }
-            IntPtr pFrame;
+            
             for (int i = 0; i < res; i++)
             {
-                DBC_CAN_OBJ frame = new DBC_CAN_OBJ();
+
                 frame.ID = RecFrame[i].ID;
                 frame.Data = RecFrame[i].Data;
                 frame.DataLen = RecFrame[i].DataLen;
-                pFrame = Marshal.AllocHGlobal(Marshal.SizeOf(typeof(VCI_CAN_OBJ1)));
+                pFrame = Marshal.AllocHGlobal(Marshal.SizeOf(typeof(VCI_CAN_OBJ)));
 
-                Marshal.StructureToPtr(frame, pFrame, true);
+                Marshal.StructureToPtr(frame, pFrame, false);
 
                 DBC.DBC_OnReceive(this.hDBC, pFrame);
 
@@ -290,22 +278,22 @@ namespace CANSignalLayer
                 {
                     if (messages[j].nID == recFrame[i].ID)
                     {
-                        IntPtr pMessage = Marshal.AllocHGlobal(Marshal.SizeOf(typeof(DBCMessage)));
-                        Marshal.StructureToPtr(messages[j], pMessage, true);
+                        pMessage = Marshal.AllocHGlobal(Marshal.SizeOf(typeof(DBCMessage)));
+                        Marshal.StructureToPtr(messages[j], pMessage, false);
 
-                        if (DBC.DBC_Analyse(hDBC, pFrame, pMessage))
+                        if (DBC.DBC_Analyse(this.hDBC, pFrame, pMessage))
                         {
                             messages[j] = (DBCMessage)Marshal.PtrToStructure(pMessage, typeof(DBCMessage));
                         }
-
-
                         Marshal.DestroyStructure(pMessage, typeof(DBCMessage));
                         Marshal.FreeHGlobal(pMessage);
+
                         break;
                     }
                 }
-                Marshal.FreeHGlobal(pFrame);
                 Marshal.DestroyStructure(pFrame, typeof(VCI_CAN_OBJ));
+                Marshal.FreeHGlobal(pFrame);
+
 
             }
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\software development\\CANHostV0.1\\Driver\\Driver.csproj": {}
+    "C:\\Users\\shawphon\\Desktop\\CANHostV0.1\\Driver\\Driver.csproj": {}
   },
   "projects": {
-    "E:\\software development\\CANHostV0.1\\Driver\\Driver.csproj": {
+    "C:\\Users\\shawphon\\Desktop\\CANHostV0.1\\Driver\\Driver.csproj": {
       "version": "1.0.1",
       "restore": {
-        "projectUniqueName": "E:\\software development\\CANHostV0.1\\Driver\\Driver.csproj",
+        "projectUniqueName": "C:\\Users\\shawphon\\Desktop\\CANHostV0.1\\Driver\\Driver.csproj",
         "projectName": "Driver",
-        "projectPath": "E:\\software development\\CANHostV0.1\\Driver\\Driver.csproj",
+        "projectPath": "C:\\Users\\shawphon\\Desktop\\CANHostV0.1\\Driver\\Driver.csproj",
         "packagesPath": "C:\\Users\\shawphon\\.nuget\\packages\\",
-        "outputPath": "E:\\software development\\CANHostV0.1\\Driver\\obj\\",
+        "outputPath": "C:\\Users\\shawphon\\Desktop\\CANHostV0.1\\Driver\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\shawphon\\AppData\\Roaming\\NuGet\\NuGet.Config",
