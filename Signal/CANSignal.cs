@@ -40,9 +40,7 @@ namespace CANSignalLayer
         private Thread recThread;
         private bool recThreadFlag = false;
 
-        private DBC_CAN_OBJ frame = new DBC_CAN_OBJ();
-        IntPtr pMessage;
-        IntPtr pFrame;
+
         #endregion
 
         #region 字段封装
@@ -261,13 +259,14 @@ namespace CANSignalLayer
             {
                 return;
             }
-            
+
             for (int i = 0; i < res; i++)
             {
-
+                DBC_CAN_OBJ frame = new DBC_CAN_OBJ();
                 frame.ID = RecFrame[i].ID;
                 frame.Data = RecFrame[i].Data;
                 frame.DataLen = RecFrame[i].DataLen;
+                IntPtr pFrame;
                 pFrame = Marshal.AllocHGlobal(Marshal.SizeOf(typeof(VCI_CAN_OBJ)));
 
                 Marshal.StructureToPtr(frame, pFrame, false);
@@ -278,6 +277,7 @@ namespace CANSignalLayer
                 {
                     if (messages[j].nID == recFrame[i].ID)
                     {
+                        IntPtr pMessage;
                         pMessage = Marshal.AllocHGlobal(Marshal.SizeOf(typeof(DBCMessage)));
                         Marshal.StructureToPtr(messages[j], pMessage, false);
 

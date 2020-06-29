@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CommunicationForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnSaveConfig = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tabControl = new System.Windows.Forms.TabControl();
@@ -60,7 +61,6 @@
             this.labDevInd = new System.Windows.Forms.Label();
             this.cobDevType = new System.Windows.Forms.ComboBox();
             this.labDevType = new System.Windows.Forms.Label();
-            this.btnSaveConfig = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -85,6 +85,20 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(580, 369);
             this.panel1.TabIndex = 0;
+            // 
+            // btnSaveConfig
+            // 
+            this.btnSaveConfig.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnSaveConfig.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnSaveConfig.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.btnSaveConfig.Location = new System.Drawing.Point(455, 327);
+            this.btnSaveConfig.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSaveConfig.Name = "btnSaveConfig";
+            this.btnSaveConfig.Size = new System.Drawing.Size(104, 37);
+            this.btnSaveConfig.TabIndex = 6;
+            this.btnSaveConfig.Text = "保存配置";
+            this.btnSaveConfig.UseVisualStyleBackColor = false;
+            this.btnSaveConfig.Click += new System.EventHandler(this.BtnSaveConfig_Click);
             // 
             // label10
             // 
@@ -444,20 +458,6 @@
             this.labDevType.Size = new System.Drawing.Size(99, 20);
             this.labDevType.TabIndex = 0;
             this.labDevType.Text = "选择设备类型";
-            // 
-            // btnSaveConfig
-            // 
-            this.btnSaveConfig.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSaveConfig.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnSaveConfig.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.btnSaveConfig.Location = new System.Drawing.Point(455, 327);
-            this.btnSaveConfig.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSaveConfig.Name = "btnSaveConfig";
-            this.btnSaveConfig.Size = new System.Drawing.Size(104, 37);
-            this.btnSaveConfig.TabIndex = 6;
-            this.btnSaveConfig.Text = "保存配置";
-            this.btnSaveConfig.UseVisualStyleBackColor = false;
-            this.btnSaveConfig.Click += new System.EventHandler(this.BtnSaveConfig_Click);
             // 
             // pictureBox1
             // 

@@ -409,7 +409,7 @@ namespace ZHISIGHT
                 };
                     label.Name = "label" + list[i];
                     label.Size = new System.Drawing.Size(62, 18);
-                    label.Text = list[i];
+                    label.Text = "#消息集";
                     groupBox.Controls.Add(label);
                     yPosition += 25;
 
@@ -435,7 +435,7 @@ namespace ZHISIGHT
                         {
                             count++;
                             yPosition = 20;
-                            xPosition = 20 + 250 * count;
+                            xPosition = 20 + 260 * count;
                         }
                         //添加进度条还是文本框
                         if (dataRows[j]["SignalName"].ToString().ToLower().Contains("life") & groupBox.Text == "Transmitted")
@@ -444,9 +444,9 @@ namespace ZHISIGHT
                             // 
                             // progressBar1
                             // 
-                            progressBar1.Location = new System.Drawing.Point(xPosition + ((labels.Size.Width + 10) > 130 ? (labels.Size.Width + 10) : 130), yPosition);
+                            progressBar1.Location = new System.Drawing.Point(xPosition + ((labels.Size.Width) > 140 ? (labels.Size.Width) : 140), yPosition);
                             progressBar1.Name = list[i] + " " + dataRows[j]["SignalName"].ToString();
-                            progressBar1.Size = new System.Drawing.Size(50, 20);
+                            progressBar1.Size = new System.Drawing.Size(62, 20);
                             progressBar1.Maximum = 255;
                             progressBar1.Minimum = 0;
                             groupBox.Controls.Add(progressBar1);
@@ -455,9 +455,9 @@ namespace ZHISIGHT
                         {
                             MyTextBox textBox = new MyTextBox
                             {
-                                Location = new System.Drawing.Point(xPosition + ((labels.Size.Width + 10) > 130 ? (labels.Size.Width + 10) : 130), yPosition),
+                                Location = new System.Drawing.Point(xPosition + ((labels.Size.Width) > 140 ? (labels.Size.Width) : 140), yPosition),
                                 Name = list[i] + " " + dataRows[j]["SignalName"].ToString(),
-                                Size = new System.Drawing.Size(50, 28),
+                                Size = new System.Drawing.Size(62, 28),
                                 Text = IntfCANSignal.GetSignalByNameToApp(Convert.ToUInt32(list[i]), System.Text.Encoding.UTF8.GetBytes(dataRows[j]["SignalName"].ToString())).ToString(),
                                 StrValue = IntfCANSignal.GetSignalByNameToApp(Convert.ToUInt32(list[i]), System.Text.Encoding.UTF8.GetBytes(dataRows[j]["SignalName"].ToString())).ToString(),
                             };
