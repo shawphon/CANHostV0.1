@@ -3,7 +3,7 @@ using System.Windows.Forms;
 using CANDriverLayer;
 
 
-namespace ZHISIGHT
+namespace ZINSIGHT
 {
     public partial class CommunicationForm : Form
     {

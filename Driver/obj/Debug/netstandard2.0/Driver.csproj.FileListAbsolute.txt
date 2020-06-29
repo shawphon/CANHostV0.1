@@ -122,4 +122,3 @@ C:\Users\shawphon\Desktop\CANHostV0.1\Driver\obj\Debug\netstandard2.0\Driver.Ass
 C:\Users\shawphon\Desktop\CANHostV0.1\Driver\obj\Debug\netstandard2.0\Driver.csproj.CoreCompileInputs.cache
 C:\Users\shawphon\Desktop\CANHostV0.1\Driver\obj\Debug\netstandard2.0\Driver.dll
 C:\Users\shawphon\Desktop\CANHostV0.1\Driver\obj\Debug\netstandard2.0\Driver.pdb
-C:\Users\shawphon\Desktop\CANHostV0.1\Driver\obj\Debug\netstandard2.0\Driver.csprojAssemblyReference.cache

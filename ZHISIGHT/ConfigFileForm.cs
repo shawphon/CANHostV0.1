@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ZHISIGHT
+namespace ZINSIGHT
 {
     public partial class ConfigFileForm : Form
     {

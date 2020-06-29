@@ -10,7 +10,7 @@ using CANDriverLayer;
 using CANSignalLayer;
 using CSVFileOperationPart;
 
-namespace ZHISIGHT
+namespace ZINSIGHT
 {
     public partial class Form1 : Form
     {

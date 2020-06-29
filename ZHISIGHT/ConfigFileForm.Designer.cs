@@ -1,4 +1,4 @@
-﻿namespace ZHISIGHT
+﻿namespace ZINSIGHT
 {
     partial class ConfigFileForm
     {
