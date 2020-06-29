@@ -153,7 +153,7 @@ namespace CANDriverLayer
             }
 
             //如果是USBCAN-2e-U 
-            if (this.devType == 21)
+            if (this.devType == 21 | this.devType == 20)
             {
                 int indexBaudrate = 0;
                 for (int i = 0; i < timing0.Length; i++)
